@@ -10,9 +10,10 @@ match op:
     case '*':
         print("The result is ", num1*num2,".", sep="")
     case '/':
-        if num2 == 0:
-            print("Cannot divide by zero.")
-        else:
-            print("The result is ", num1/num2,".", sep="")
+        match num2:
+            case 0:
+                print("Cannot divide by zero.")
+            case _:
+                print("The result is ", num1/num2,".", sep="")
     case _:
         print("Unknown operation.")
