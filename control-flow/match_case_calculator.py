@@ -14,3 +14,5 @@ match op:
             print("Cannot divide by zero.")
         else:
             print("The result is ", num1/num2,".", sep="")
+    case _:
+        print("Unknown operation.")
