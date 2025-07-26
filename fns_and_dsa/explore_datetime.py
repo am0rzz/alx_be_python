@@ -2,8 +2,8 @@ from datetime import datetime,timedelta,date
 
 
 def display_current_datetime():
-    cuurent_date = datetime.now().replace(microsecond=0)
-    print(f"Current date and time: {cuurent_date}")
+    cuurent_date = datetime.now()
+    print(cuurent_date.strftime("%Y-%m-%d %H:%M:%S"))
 
 def calculate_future_date():
     number_of_days = int(input("Enter the number of days to add to the current date: "))
