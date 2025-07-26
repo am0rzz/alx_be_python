@@ -10,13 +10,13 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
         if choice == '1':
-            item = input("Enter Item name: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
         elif choice == '2':
-            item = input("Enter Item name: ")
+            item = input("Enter the item to remove: ")
             if item not in shopping_list:
                 print("Item is not in the list.")
             else:  
